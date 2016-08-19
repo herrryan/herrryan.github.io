@@ -1,25 +1,14 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2016-08-15 14:48:17
-categories: jekyll update
+title:  "A track-keeping of oneself"
+date:   2016-08-19 15:00:17
+categories: blog
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+It's been a while since last time I wanted to start a blog of the life of myself. As the time goes by and my year counter goes up, I find somehow hard to remember of stuff of my life. It's been somehow hard to remember some events before in the past, for example, the places that I have been to, things I have done, code that I used to write, knowledge that I used to master and so on.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+And what's more, is that I have been talking to myself that in order to make a big change, do baby steps. And that is making a small change everyday: I stopped drinking alchohol and coffee three days a ago (maybe I will elaberate this point in my next post), I have started this blog, I try to stop caring too much and not to be bossy or manipulative, let's see how it is.
 
-Jekyll also offers powerful support for code snippets:
+So I think it is not a bad idea to start memorizing life in a modern (or old) fashion. Modern fashing means that compare to old diary write, blogging is just much more efficient and space saving way of writing diary. And it does not need to happen on everyday. It is old fashion because it is essentially a diary. I am not a good writer and also not a person who could tell a story fluently and interestingly. But it is never too old to learn and practise makes perfect.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
-
-[jekyll]:      http://jekyllrb.com
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-help]: https://github.com/jekyll/jekyll-help
+I don't expect a big audience and I might get freaked out when there is a big crowd. Actually I just want to keep it to me or maybe some close ones ;)
+Stay tuned!
