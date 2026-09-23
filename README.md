@@ -1,35 +1,33 @@
-# AstroZen - Personal Portfolio Website
+# herrryan.github.io
 
-AstroZen is a minimalist, accessible and responsive portfolio template for your personal portfolio website. It is built with Astro and TailwindCSS.
+Personal website and technical blog of **Ryan Guo** (Cloud Architect, Systems Engineer & AI Builder).
 
-![zen-og](https://github.com/user-attachments/assets/7a72aaae-6652-4cd0-becc-8e6a3c224993)
+Live at [https://herrryan.github.io](https://herrryan.github.io).
 
-> [!NOTE]
-> The information contained in this template, including names, images, and content, is entirely fictitious and is intended solely to give the design a realistic appearance. Any coincidence with real-life people, events, or situations is purely coincidental. It is recommended that you replace this information with your own information.
+## 🚀 Tech Stack
 
-## 🔥 Features
+- **[Astro](https://astro.build/)** (v7) — Ultra-fast static site generator with zero client JS by default
+- **[AstroPaper](https://github.com/satnaing/astro-paper)** — Minimalist, accessible, responsive theme
+- **[Tailwind CSS v4](https://tailwindcss.com/)** — Modern design system and typography
+- **[Pagefind](https://pagefind.app/)** — Fully offline, zero-latency static client search
+- **TypeScript** & **Markdown/MDX** — Strongly typed content collections
 
-- [x] Minimalist design. clean and simple
-- [x] Mobile-first responsive layout
-- [x] SEO-friendly and accessible
-- [x] Easy to customize with a single configuration file
+## 🛠️ Development
 
-## ✅ Lighthouse Score
+```bash
+# Install dependencies
+pnpm install
 
-![performance](https://github.com/user-attachments/assets/4f95e2ca-03f9-4996-9e34-dcd179194c58)
+# Start local dev server
+pnpm run dev
 
-## 🚀 Getting Started
+# Build for production (with type-check and Pagefind indexing)
+pnpm run build
 
-Clone this repository to your local machine using Git.
-
-```scheme
-git clone https://github.com/immois/astro-zen.git
-cd astro-zen
+# Preview production build locally
+pnpm run preview
 ```
 
-| Command        | Action                                       |
-| :------------- | :------------------------------------------- |
-| `pnpm install` | Installs dependencies                        |
-| `pnpm dev`     | Starts local dev server at `localhost:4321`  |
-| `pnpm build`   | Build your production site to `./dist/`      |
-| `pnpm preview` | Preview your build locally, before deploying |
+## 📦 Deployment
+
+Continuous deployment runs on GitHub Actions on every push to `master` and publishes to GitHub Pages.
