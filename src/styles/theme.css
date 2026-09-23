@@ -7,28 +7,29 @@
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
   --color-border: var(--border);
-  --font-app: var(--font-google-sans-code);
+  --font-app: var(--font-jost), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: var(--font-google-sans-code), monospace;
 }
 
-/* Light theme values */
+/* Light theme values - Sat Naing Marrs Green Palette */
 :root,
 [data-theme="light"] {
-  --background: #fdfdfd;
-  --foreground: #282728;
-  --accent: #006cac;
+  --background: #f9fafb;
+  --foreground: #1d2a35;
+  --accent: #007a7a;
   --accent-foreground: #ffffff;
-  --muted: #e6e6e6;
-  --muted-foreground: #6b7280;
-  --border: #ece9e9;
+  --muted: #eff3f3;
+  --muted-foreground: #52606d;
+  --border: #e2efef;
 }
 
-/* Dark theme values */
+/* Dark theme values - Sat Naing Carri Green Navy Palette */
 [data-theme="dark"] {
-  --background: #212737;
-  --foreground: #eaedf3;
-  --accent: #ff6b01;
-  --accent-foreground: #ffffff;
-  --muted: #343f60;
-  --muted-foreground: #afb9ca;
-  --border: #ab4b08;
+  --background: #1d2a35;
+  --foreground: #f9fafb;
+  --accent: #05ce91;
+  --accent-foreground: #1d2a35;
+  --muted: #22323f;
+  --muted-foreground: #94a3b8;
+  --border: #2c3e4f;
 }

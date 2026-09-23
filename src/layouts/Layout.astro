@@ -4,6 +4,7 @@ import { ClientRouter } from "astro:transitions";
 import { getRelativeLocaleUrl } from "astro:i18n";
 import { resolveDefaultOgImagePath } from "@/utils/resolveDefaultOgImagePath";
 import { getAssetPath } from "@/utils/withBase";
+import FloatingSidebars from "@/components/FloatingSidebars.astro";
 import config from "@/config";
 import "@/styles/global.css";
 
@@ -44,7 +45,14 @@ const rssHref = getRelativeLocaleUrl(
     <link rel="canonical" href={canonicalURL} />
     <meta name="generator" content={Astro.generator} />
 
-    <!-- Font -->
+    <!-- Fonts: Jost for clean geometric typography + Monospace for code -->
+    <Font
+      cssVariable="--font-jost"
+      preload={[
+        { subset: "latin", weight: 400, style: "normal" },
+        { subset: "latin", weight: 600, style: "normal" },
+      ]}
+    />
     <Font
       cssVariable="--font-google-sans-code"
       preload={[{ subset: "latin", weight: 400, style: "normal" }]}
@@ -117,9 +125,10 @@ const rssHref = getRelativeLocaleUrl(
     <ClientRouter />
   </head>
   <body
-    class="bg-background font-app text-foreground selection:bg-accent/75 selection:text-accent-foreground flex min-h-svh flex-col"
+    class="bg-background font-app text-foreground selection:bg-accent selection:text-accent-foreground flex min-h-svh flex-col relative"
   >
     <slot />
+    <FloatingSidebars />
     <script>
       import "@/scripts/theme";
     </script>

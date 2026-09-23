@@ -60,6 +60,15 @@ export default defineConfig({
   },
   fonts: [
     {
+      name: "Jost",
+      cssVariable: "--font-jost",
+      provider: fontProviders.google(),
+      fallbacks: ["sans-serif"],
+      weights: [400, 500, 600, 700],
+      styles: ["normal", "italic"],
+      formats: ["woff", "ttf"],
+    },
+    {
       name: "Google Sans Code",
       cssVariable: "--font-google-sans-code",
       provider: fontProviders.google(),

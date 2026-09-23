@@ -8,9 +8,23 @@
 @layer base {
   * {
     @apply border-border outline-accent/75;
-    scrollbar-width: auto;
-    scrollbar-color: var(--color-muted) transparent;
   }
+  /* ===== Custom Scrollbar ===== */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: var(--background);
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--muted);
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--muted-foreground);
+  }
+
   a,
   button,
   #main-content {
@@ -30,8 +44,12 @@
   @apply max-w-app mx-auto w-full px-4;
 }
 
+@utility glassmorphism {
+  @apply backdrop-blur-xl bg-background/85;
+}
+
 @utility active-nav {
-  @apply underline decoration-wavy decoration-2 underline-offset-8;
+  @apply text-accent font-semibold;
 }
 
 :target {

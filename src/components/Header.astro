@@ -12,7 +12,7 @@ import { stripBase, stripLocale } from "@/utils/withBase";
 import { useTranslations } from "@/i18n";
 import config from "@/config";
 
-const { site, features } = config;
+const { features } = config;
 
 const locale = Astro.currentLocale ?? config.site.lang;
 const t = useTranslations(locale);
@@ -43,16 +43,16 @@ const isActive = (path: string) => {
 </a>
 
 <header
-  class="app-layout flex flex-col items-center justify-between sm:flex-row"
+  class="sticky top-0 z-40 w-full glassmorphism border-b border-border transition-colors"
 >
   <div
-    class="border-border bg-background relative flex w-full items-baseline justify-between border-b py-4 sm:items-center sm:py-6"
+    class="app-layout relative flex w-full flex-col sm:flex-row items-baseline justify-between py-3.5 sm:items-center sm:py-4"
   >
     <a
       href={getRelativeLocaleUrl(locale, "")}
-      class="absolute py-1 text-xl leading-8 font-semibold whitespace-nowrap sm:static sm:my-auto sm:text-2xl sm:leading-none"
+      class="absolute py-1 text-xl leading-8 font-bold whitespace-nowrap sm:static sm:my-auto sm:text-2xl sm:leading-none tracking-tight group hover:text-accent transition-colors"
     >
-      {site.title}
+      Ryan<span class="text-accent">.dev</span>
     </a>
     <nav
       id="nav-menu"
